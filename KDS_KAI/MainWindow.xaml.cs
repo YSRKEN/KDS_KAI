@@ -21,5 +21,10 @@ namespace KDS_KAI {
 		public MainWindow() {
 			InitializeComponent();
 		}
+
+		// 「計算開始」ボタンを押した際の処理
+		private void CalcButton_Click(object sender, RoutedEventArgs e) {
+
+		}
 	}
 }

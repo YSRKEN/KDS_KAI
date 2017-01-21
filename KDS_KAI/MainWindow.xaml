@@ -5,8 +5,106 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KDS_KAI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="KDS_KAI" Height="270" Width="490">
+	<Grid Margin="0,0,0,0">
+		<GroupBox Header="攻撃艦" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.169,-0.435" Height="220" Width="165">
+			<Grid>
+				<TabControl x:Name="AttackTabControl" HorizontalAlignment="Left" Height="193" Margin="3,3,0,0" VerticalAlignment="Top" Width="146">
+					<TabItem Header="艦娘+艤装">
+						<Grid>
+							<Button x:Name="AttackKammusuButton" Content="艦娘..." HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="120"/>
+							<Button x:Name="AttackWeapon1Button" Content="装備1..." HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Width="120"/>
+							<Button x:Name="AttackWeapon2Button" Content="装備2..." HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" Width="120"/>
+							<Button x:Name="AttackWeapon3Button" Content="装備3..." HorizontalAlignment="Left" Margin="10,85,0,0" VerticalAlignment="Top" Width="120"/>
+							<Button x:Name="AttackWeapon4Button" Content="装備4..." HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top" Width="120"/>
+							<Button x:Name="AttackWeapon5Button" Content="装備5..." HorizontalAlignment="Left" Margin="10,135,0,0" VerticalAlignment="Top" Width="120"/>
+						</Grid>
+					</TabItem>
+					<TabItem Header="数値入力">
+						<Grid/>
+					</TabItem>
+				</TabControl>
+			</Grid>
+		</GroupBox>
+		<GroupBox Header="防御艦" HorizontalAlignment="Left" Margin="180,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.169,-0.435" Height="220" Width="165">
+			<Grid>
+				<TabControl x:Name="DefenseTabControl" HorizontalAlignment="Left" Height="193" Margin="3,3,0,0" VerticalAlignment="Top" Width="146">
+					<TabItem Header="艦娘+艤装">
+						<Grid>
+							<Button x:Name="DefenseKammusuButton" Content="艦娘..." HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="120"/>
+							<Button x:Name="DefenseWeapon1Button" Content="装備1..." HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Width="120"/>
+							<Button x:Name="DefenseWeapon2Button" Content="装備2..." HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" Width="120"/>
+							<Button x:Name="DefenseWeapon3Button" Content="装備3..." HorizontalAlignment="Left" Margin="10,85,0,0" VerticalAlignment="Top" Width="120"/>
+							<Button x:Name="DefenseWeapon4Button" Content="装備4..." HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top" Width="120"/>
+							<Button x:Name="DefenseWeapon5Button" Content="装備5..." HorizontalAlignment="Left" Margin="10,135,0,0" VerticalAlignment="Top" Width="120"/>
+						</Grid>
+					</TabItem>
+					<TabItem Header="数値入力">
+						<Grid/>
+					</TabItem>
+				</TabControl>
+			</Grid>
+		</GroupBox>
+		<GroupBox Header="戦闘設定" HorizontalAlignment="Left" Margin="350,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.169,-0.435" Height="220" Width="122">
+			<Grid>
+				<ComboBox Width="90" VerticalAlignment="Top" x:Name="AttackFleetTypeComboBox" Margin="10,10,0,0" HorizontalAlignment="Left" SelectedIndex="1">
+					<ComboBoxItem Content="艦隊種別"/>
+					<ComboBoxItem Content="通常艦隊"/>
+					<ComboBoxItem Content="空母第1"/>
+					<ComboBoxItem Content="空母第2"/>
+					<ComboBoxItem Content="水上第1"/>
+					<ComboBoxItem Content="水上第2"/>
+					<ComboBoxItem Content="輸送第1"/>
+					<ComboBoxItem Content="輸送第2"/>
+				</ComboBox>
+				<ComboBox Width="90" VerticalAlignment="Top" x:Name="BattlepositionComboBox" Margin="10,37,0,0" HorizontalAlignment="Left" SelectedIndex="1">
+					<ComboBoxItem Content="交戦形態"/>
+					<ComboBoxItem Content="同航戦"/>
+					<ComboBoxItem Content="反航戦"/>
+					<ComboBoxItem Content="丁字有利"/>
+					<ComboBoxItem Content="丁字不利"/>
+					<ComboBoxItem Content="彩雲あり"/>
+					<ComboBoxItem Content="彩雲なし"/>
+				</ComboBox>
+				<ComboBox Width="90" VerticalAlignment="Top" x:Name="AttackFormationComboBox" Margin="10,64,0,0" HorizontalAlignment="Left" SelectedIndex="0">
+					<ComboBoxItem Content="攻撃陣形"/>
+					<ComboBoxItem Content="単縦陣"/>
+					<ComboBoxItem Content="複縦陣"/>
+					<ComboBoxItem Content="輪形陣"/>
+					<ComboBoxItem Content="梯形陣"/>
+					<ComboBoxItem Content="単横陣"/>
+					<ComboBoxItem Content="第一(対潜)"/>
+					<ComboBoxItem Content="第二(前方)"/>
+					<ComboBoxItem Content="第三(輪形)"/>
+					<ComboBoxItem Content="第四(戦闘)"/>
+				</ComboBox>
+				<ComboBox Width="90" VerticalAlignment="Top" x:Name="DefenseFormationComboBox" Margin="10,91,0,0" HorizontalAlignment="Left" SelectedIndex="0">
+					<ComboBoxItem Content="防御陣形"/>
+					<ComboBoxItem Content="単縦陣"/>
+					<ComboBoxItem Content="複縦陣"/>
+					<ComboBoxItem Content="輪形陣"/>
+					<ComboBoxItem Content="梯形陣"/>
+					<ComboBoxItem Content="単横陣"/>
+					<ComboBoxItem Content="第一(対潜)"/>
+					<ComboBoxItem Content="第二(前方)"/>
+					<ComboBoxItem Content="第三(輪形)"/>
+					<ComboBoxItem Content="第四(戦闘)"/>
+				</ComboBox>
+				<ComboBox Width="90" VerticalAlignment="Top" x:Name="DamageLevelComboBox" Margin="10,118,0,0" HorizontalAlignment="Left" SelectedIndex="1">
+					<ComboBoxItem Content="損傷状態"/>
+					<ComboBoxItem Content="小破以下"/>
+					<ComboBoxItem Content="中破状態"/>
+					<ComboBoxItem Content="大破状態"/>
+				</ComboBox>
+				<ComboBox Width="90" VerticalAlignment="Top" x:Name="AmmoLevelComboBox" Margin="10,145,0,0" HorizontalAlignment="Left" SelectedIndex="1" RenderTransformOrigin="0.511,2.955">
+					<ComboBoxItem Content="弾薬残量"/>
+					<ComboBoxItem Content="3戦目以下"/>
+					<ComboBoxItem Content="4戦目"/>
+					<ComboBoxItem Content="5戦目"/>
+					<ComboBoxItem Content="6戦目以上"/>
+				</ComboBox>
+				<Button x:Name="CalcButton" Content="計算開始" HorizontalAlignment="Left" Margin="10,172,0,0" VerticalAlignment="Top" Width="90" Click="CalcButton_Click"/>
+			</Grid>
+		</GroupBox>
+	</Grid>
 </Window>
