@@ -12,12 +12,12 @@
 				<TabControl x:Name="AttackTabControl" HorizontalAlignment="Left" Height="193" Margin="3,3,0,0" VerticalAlignment="Top" Width="146">
 					<TabItem Header="艦娘+艤装">
 						<Grid>
-							<Button x:Name="AttackKammusuButton" Content="艦娘..." HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="120"/>
-							<Button x:Name="AttackWeapon1Button" Content="装備1..." HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Width="120"/>
-							<Button x:Name="AttackWeapon2Button" Content="装備2..." HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" Width="120"/>
-							<Button x:Name="AttackWeapon3Button" Content="装備3..." HorizontalAlignment="Left" Margin="10,85,0,0" VerticalAlignment="Top" Width="120"/>
-							<Button x:Name="AttackWeapon4Button" Content="装備4..." HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top" Width="120"/>
-							<Button x:Name="AttackWeapon5Button" Content="装備5..." HorizontalAlignment="Left" Margin="10,135,0,0" VerticalAlignment="Top" Width="120"/>
+							<Button x:Name="AttackKammusuButton" Content="艦娘..." HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="120" Click="AttackKammusuButton_Click"/>
+							<Button x:Name="AttackWeapon1Button" Content="装備1..." HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Width="120" Click="AttackWeapon1Button_Click"/>
+							<Button x:Name="AttackWeapon2Button" Content="装備2..." HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" Width="120" Click="AttackWeapon2Button_Click"/>
+							<Button x:Name="AttackWeapon3Button" Content="装備3..." HorizontalAlignment="Left" Margin="10,85,0,0" VerticalAlignment="Top" Width="120" Click="AttackWeapon3Button_Click"/>
+							<Button x:Name="AttackWeapon4Button" Content="装備4..." HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top" Width="120" Click="AttackWeapon4Button_Click"/>
+							<Button x:Name="AttackWeapon5Button" Content="装備5..." HorizontalAlignment="Left" Margin="10,135,0,0" VerticalAlignment="Top" Width="120" Click="AttackWeapon5Button_Click"/>
 						</Grid>
 					</TabItem>
 					<TabItem Header="数値入力">
@@ -31,12 +31,12 @@
 				<TabControl x:Name="DefenseTabControl" HorizontalAlignment="Left" Height="193" Margin="3,3,0,0" VerticalAlignment="Top" Width="146">
 					<TabItem Header="艦娘+艤装">
 						<Grid>
-							<Button x:Name="DefenseKammusuButton" Content="艦娘..." HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="120"/>
-							<Button x:Name="DefenseWeapon1Button" Content="装備1..." HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Width="120"/>
-							<Button x:Name="DefenseWeapon2Button" Content="装備2..." HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" Width="120"/>
-							<Button x:Name="DefenseWeapon3Button" Content="装備3..." HorizontalAlignment="Left" Margin="10,85,0,0" VerticalAlignment="Top" Width="120"/>
-							<Button x:Name="DefenseWeapon4Button" Content="装備4..." HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top" Width="120"/>
-							<Button x:Name="DefenseWeapon5Button" Content="装備5..." HorizontalAlignment="Left" Margin="10,135,0,0" VerticalAlignment="Top" Width="120"/>
+							<Button x:Name="DefenseKammusuButton" Content="艦娘..." HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="120" Click="DefenseKammusuButton_Click"/>
+							<Button x:Name="DefenseWeapon1Button" Content="装備1..." HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Width="120" Click="DefenseWeapon1Button_Click"/>
+							<Button x:Name="DefenseWeapon2Button" Content="装備2..." HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" Width="120" Click="DefenseWeapon2Button_Click"/>
+							<Button x:Name="DefenseWeapon3Button" Content="装備3..." HorizontalAlignment="Left" Margin="10,85,0,0" VerticalAlignment="Top" Width="120" Click="DefenseWeapon3Button_Click"/>
+							<Button x:Name="DefenseWeapon4Button" Content="装備4..." HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top" Width="120" Click="DefenseWeapon4Button_Click"/>
+							<Button x:Name="DefenseWeapon5Button" Content="装備5..." HorizontalAlignment="Left" Margin="10,135,0,0" VerticalAlignment="Top" Width="120" Click="DefenseWeapon5Button_Click"/>
 						</Grid>
 					</TabItem>
 					<TabItem Header="数値入力">
