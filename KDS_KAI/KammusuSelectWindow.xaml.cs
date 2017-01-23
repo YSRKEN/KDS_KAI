@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using static KDS_KAI.Constant;
 
 namespace KDS_KAI {
 	/// <summary>
@@ -22,8 +23,17 @@ namespace KDS_KAI {
 		// コンストラクタ
 		public KammusuSelectWindow(BattleSide bs) {
 			InitializeComponent();
+			// 引数を受け取り、画面に反映する
 			battleSide = bs;
-			this.SelectInfoTextBlock.Text = "設定対象：" + (battleSide == BattleSide.Attack ? "攻撃艦" : "防御艦");
+			SelectInfoTextBlock.Text = "設定対象：" + (battleSide == BattleSide.Attack ? "攻撃艦" : "防御艦");
+			// コンボボックスの中身を動的に初期化する
+			// レベル
+			ShipLevelComboBox.Items.Add("Lv.");
+			for(int level = 1; level <= KammusuLevelMax; ++level) {
+				ShipLevelComboBox.Items.Add(level.ToString());
+			}
+			ShipLevelComboBox.SelectedIndex = 0;
+			
 		}
 	}
 }

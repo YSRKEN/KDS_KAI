@@ -5,8 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace KDS_KAI {
-	// 攻方か受方か
-	public enum BattleSide { Attack, Defense }
+	public static class Constant {
+		// 攻方か受方か
+		public enum BattleSide { Attack, Defense }
+		public static int KammusuLevelMax = 155;
+	}
 	class Simulator {
 		
 	}

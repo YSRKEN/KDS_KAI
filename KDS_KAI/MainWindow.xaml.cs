@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static KDS_KAI.Constant;
 
 namespace KDS_KAI {
 	/// <summary>
