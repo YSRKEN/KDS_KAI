@@ -25,9 +25,17 @@ namespace KDS_KAI {
 		// コンストラクタ
 		public WeaponSelectWindow(BattleSide bs, int si) {
 			InitializeComponent();
+			// 引数を受け取り、画面に反映する
 			battleSide = bs;
 			SlotIndex = si;
 			this.SelectInfoTextBlock.Text = "設定対象：" + (battleSide == BattleSide.Attack ? "攻撃艦" : "防御艦") + " 第" + (SlotIndex + 1).ToString() + "スロット";
+			// コンボボックスの中身を動的に初期化する
+			// 改修度
+			for(int level = 0; level < WeaponLevelMax; ++level) {
+				WeaponLevelComboBox.Items.Add("★" + level.ToString());
+			}
+			WeaponLevelComboBox.Items.Add("★MAX");
+			WeaponLevelComboBox.SelectedIndex = 0;
 		}
 	}
 }

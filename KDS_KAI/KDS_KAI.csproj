@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Constant.cs" />
     <Compile Include="Simulator.cs" />
     <Compile Include="WeaponSelectWindow.xaml.cs">
       <DependentUpon>WeaponSelectWindow.xaml</DependentUpon>

@@ -12,10 +12,12 @@
 		<TextBlock HorizontalAlignment="Left" Margin="115,31,0,0" TextWrapping="Wrap" Text="艦型" VerticalAlignment="Top" RenderTransformOrigin="-1.092,-2.076" FontWeight="Bold"/>
 		<TextBlock HorizontalAlignment="Left" Margin="220,31,0,0" TextWrapping="Wrap" Text="艦名" VerticalAlignment="Top" RenderTransformOrigin="-1.092,-2.076" FontWeight="Bold"/>
 		<TextBlock HorizontalAlignment="Left" Margin="325,31,0,0" TextWrapping="Wrap" Text="その他" VerticalAlignment="Top" RenderTransformOrigin="-1.092,-2.076" FontWeight="Bold"/>
-		<ListBox x:Name="ShipTypeListBox" HorizontalAlignment="Left" Height="208" Margin="10,52,0,0" VerticalAlignment="Top" Width="100"/>
-		<ListBox x:Name="ShipClassListBox" HorizontalAlignment="Left" Height="208" Margin="115,52,0,0" VerticalAlignment="Top" Width="100"/>
-		<ListBox x:Name="ShipNameListBox" HorizontalAlignment="Left" Height="208" Margin="220,52,0,0" VerticalAlignment="Top" Width="100"/>
-		<ComboBox x:Name="ShipLevelComboBox" HorizontalAlignment="Left" Margin="325,52,0,0" VerticalAlignment="Top" Width="54"/>
+		<ListBox x:Name="ShipTypeListBox" HorizontalAlignment="Left" Height="198" Margin="10,52,0,0" VerticalAlignment="Top" Width="100"/>
+		<ListBox x:Name="ShipClassListBox" HorizontalAlignment="Left" Height="198" Margin="115,52,0,0" VerticalAlignment="Top" Width="100"/>
+		<ListBox x:Name="ShipNameListBox" HorizontalAlignment="Left" Height="198" Margin="220,52,0,0" VerticalAlignment="Top" Width="100"/>
+		<ComboBox x:Name="ShipLevelComboBox" HorizontalAlignment="Left" Margin="325,52,0,0" VerticalAlignment="Top" Width="54" SelectedIndex="0">
+			<ComboBoxItem Content="Lv."/>
+		</ComboBox>
 		<ComboBox x:Name="ShipLuckComboBox" HorizontalAlignment="Left" Margin="325,79,0,0" VerticalAlignment="Top" Width="54" SelectedIndex="0">
 			<ComboBoxItem Content="運"/>
 		</ComboBox>

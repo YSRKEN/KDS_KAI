@@ -28,7 +28,6 @@ namespace KDS_KAI {
 			SelectInfoTextBlock.Text = "設定対象：" + (battleSide == BattleSide.Attack ? "攻撃艦" : "防御艦");
 			// コンボボックスの中身を動的に初期化する
 			// レベル
-			ShipLevelComboBox.Items.Add("Lv.");
 			for(int level = 1; level <= KammusuLevelMax; ++level) {
 				ShipLevelComboBox.Items.Add(level.ToString());
 			}
